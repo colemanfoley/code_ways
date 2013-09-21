@@ -1,68 +1,70 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 	<head>
 		<script type="text/javascript" src="functions.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	</head>
 	<body>
-		<header><h1>How to Become a Web Developer</h1></header>
-		<p>
-		So you want to be a web developer? Well, you need to know HTML, CSS, and Javascript for sure. 
-		If you're going to make stuff on the web, you're definitely going to use those. These technologies 
-		are how people create the front ends of web applications. HTML and CSS are good ones to start with because they are
-		easier than Javascript or any of the other programming languages you will use on the back end of your app. I tried to jump into 
-		server side languages after learning only the tiniest bit of HTML, CSS, and Javascript, and it was pretty frustrating. So I went back to the basics
-		and made this app.
-		</p>
-		<p>
-		It's when you get to the back end that things get interesting. There are tons of choices. Some popular
-		languages right now are Python and Ruby. You can even use JavaScript, which is nice, because it means you don't have to learn another language to make a back end.
-		
-		So, which do you want to use?
-		</p>
-		<p>
-			<select id="Backend" onchange="backendFunction()">
-				<option value="Null">Please select a value</option>
-				<option value="Python">Python</option>
-				<option value="Ruby">Ruby</option>
-				<option value="PHP">PHP</option>
-			</select>
-		</p>
-		<p>
-			<div id="backendDummy">
-			</div>
-		</p>
-		<p>
-		Alright, now, would you say you're more of an independent learner or a person that benefits from structure?
-		</p>
-		<p>
-			<select id="learningStyle" onchange="learningStyleFunction()">
-				<option value="Null">Please select a value</option>
-				<option value="Independent">Independent</option>
-				<option value="Structured">Structured</option>
-			</select>
-		</p>
-		<p>
-			<div id="learningStyleDummy">
-			</div>
-		</p>
-		<p>
-			To see your recommended course of action, click "Tell me what to do."<br>
-			<button id="conclusion" onclick="conclusionGenerator()">
-			Tell me what to do!
-			</button>
-		</p>
-		<p>
-			<div id="conclusionDummy">
-			</div>
-		</p>
-		<p>
-			<button onclick="oneMoreThing()">One more thing...</button>
-		</p>
-		<p>
-			<div id="oneMoreThingDummy">
-			</div>
-		</p>
+		<div class="container">
+			<header><h1>How to Become a Web Developer</h1></header>
+			<p>
+			So you want to be a web developer? Well, you need to know HTML, CSS, and Javascript for sure. 
+			If you're going to make stuff on the web, you're definitely going to use those. These technologies 
+			are how people create the front ends of web applications. HTML and CSS are good ones to start with because they are
+			easier than Javascript or any of the other programming languages you will use on the back end of your app. I tried to jump into 
+			server side languages after learning only the tiniest bit of HTML, CSS, and Javascript, and it was pretty frustrating. So I went back to the basics
+			and made this app.
+			</p>
+			<p>
+			It's when you get to the back end that things get interesting. There are tons of choices. Some popular
+			languages right now are Python and Ruby. You can even use JavaScript, which is nice, because it means you don't have to learn another language to make a back end. So, which do you want to use?
+			</p>
+			<p>
+				<select id="Backend" onchange="backendFunction()">
+					<option value="Null">Please select a value</option>
+					<option value="Python">Python</option>
+					<option value="Ruby">Ruby</option>
+					<option value="PHP">PHP</option>
+				</select>
+			</p>
+			<p>
+				<div id="backendDummy">
+				</div>
+			</p>
+			<p>
+			Alright, now, would you say you're more of an independent learner or a person that benefits from structure?
+			</p>
+			<p>
+				<select id="learningStyle" onchange="learningStyleFunction()">
+					<option value="Null">Please select a value</option>
+					<option value="Independent">Independent</option>
+					<option value="Structured">Structured</option>
+				</select>
+			</p>
+			<p>
+				<div id="learningStyleDummy">
+				</div>
+			</p>
+			<p>
+				To see your recommended course of action, click "Tell me what to do."<br>
+				<button id="conclusion" class="btn" onclick="conclusionGenerator()">
+				Tell me what to do!
+				</button>
+			</p>
+			<p>
+				<div id="conclusionDummy">
+				</div>
+			</p>
+			<p>
+				<button class="btn" onclick="oneMoreThing()">One more thing...</button>
+			</p>
+			<p>
+				<div id="oneMoreThingDummy">
+				</div>
+			</p>
+		</div>
+
 	</body>
 </html>
