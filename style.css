@@ -1,3 +1,15 @@
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
+h1, p, div {
+	text-align: center;
+}
+
+#conclusion {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+#recommendation {
+	margin-top: 10px;
+	font-size: 20px;
+}
